@@ -1,4 +1,18 @@
 # Solidity-Proyecto-Peseta
+
+/*
+ * 	Nombre: Peseta-ICO.sol
+ *	Version:	v0.1
+ *	Autor:	Jorge Martin
+ *	Fecha:	noviembre 2017
+ *	Descripcion:		Empezaremos desde cero y proporcionalmente llegaremos a terminar, en su conjunto,
+ *                  la creación de una ICO llamada peseta, empezamos con código para saber de que va esto...
+ *                   Se ha testeado en:
+ *                      https://ethereum.github.io/browser-solidity/
+ *                      http://ethereum.github.io/browser-solidity/
+ */
+ 
+ 
 Proyectos básicos de solidity, hasta la peseta
 
 1-Peseta-ICO.sol
