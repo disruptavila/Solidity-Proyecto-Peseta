@@ -28,18 +28,18 @@ contract Pesetas {
     
     function transfierePesetas ( address origen, address destino, uint importe) {
         
-        if( balances [origen] < importe){
+        if((balances [origen] > importe) && (balances [destino] < importe)){
             return;  //control y te vas, no hace falta else
         } 
         
-        
         //primero se lo quito a quien tiene.
         //cuidado porque puede pasar un DAO problem
-        balances[destino] = balances [destino] + importe;
+          balances[origen] = balances [origen] - importe;
+        
         
         //despues se lo agrego
         //despues de consultar valor, lo guardo en el mapa.
-        balances[origen] = balances [origen] - importe;
+          balances[destino] = balances [destino] + importe;
         
         
     }
